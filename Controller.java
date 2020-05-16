@@ -50,7 +50,7 @@ class Controller
          }
          JOptionPane.showMessageDialog(null, "finished");
          output.repaint();
-         String again = JOptionPane.showInputDialog("Do you want to reserve again?");
+         String again = JOptionPane.showInputDialog("Do you want to reserve again? \n yes \n no").toLowerCase().trim();
          if(again.equals("yes")){}
          else if(again.equals("no"))
          {reserve = false;output.repaint();JOptionPane.showMessageDialog(null, "Have a nice trip!");System.exit(0);}
